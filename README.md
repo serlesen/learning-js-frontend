@@ -69,16 +69,17 @@ src/
 │   ├── button/         Button (primary, secondary, quiet)
 │   ├── icons/          SVG icons as React components, drawn with currentColor
 │   ├── language-select/ LanguageSelect: switches and saves the interface language
+│   ├── more-games/     MoreGames: the top bar menu linking the other games of the series
 │   ├── rich-text/      RichText: text where `backticks` mark inline code
 ├── hooks/              useDebounced (run the code once typing stops), useErrorText (translated run errors),
 │                       useLatest, useCodeComments (translated code comments)
 ├── i18n/               i18next setup and locales/<en|fr|es|it|de>/translation.json
-├── layout/             PublicLayout: top bar with the brand, the step strip and the language selector; Footer with the project links
+├── layout/             PublicLayout: top bar with the brand, the step strip, the More games menu and the language selector; Footer with the project links
 ├── services/           progressService and languageService: read and write the progress and the language in localStorage
 ├── stores/             progressStore (zustand): current step, completed steps, code and hints per step
 ├── styles/             _config.scss (tokens), _typography.scss, _mixins.scss, global.scss
 ├── test/               shared test setup, render helpers and jsdom pages
-├── types/              enums (EditorTab, RunError, LogLevel, CheckStatus, Notice, CharKind, ButtonVariant, Language, FooterLink) and JSDoc entities
+├── types/              enums (EditorTab, RunError, LogLevel, CheckStatus, Notice, CharKind, ButtonVariant, Language, FooterLink, Game) and JSDoc entities
 ├── utils/              page (the shop page document), runner (runs the student's code), checks (runs a step's checks),
 │                       loopGuard and scan (stop endless loops), memoryStorage, formatValue (console output), codeComments
 └── views/
